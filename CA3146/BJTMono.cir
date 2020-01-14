@@ -1,0 +1,19 @@
+
+Vcc N004 0 5V
+Vin N001 0 PULSE(0 5 0 1u 1u 1m 5m)
+R1 N001 N002 12k
+Q3 N003 N002 0 CA3146
+RC1 N004 N003 1.2k
+C1 N003 N005 1u
+RB N004 N005 4.7k
+Q2 N006 N005 0 CA3146
+RC2 N004 N006 1.2k
+R2 N006 N007 12k
+Q1 N003 N007 0 CA3146
+
+
+.lib C:\Users\Sefa\Desktop\Library\Digilib.txt
+
+.tran 50m
+.backanno
+.end
