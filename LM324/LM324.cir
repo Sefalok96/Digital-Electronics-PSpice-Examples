@@ -1,0 +1,18 @@
+Monostable Multivibrator with LM324
+V+ N006 0 8V
+V- 0 N007 8V
+Vin N001 0 PULSE(0 5 0 0 0 1m 5m)
+C1 N001 N002 100n
+Ri N002 0 1k
+D1 N002 N003 1N4148
+D2 0 N004 1N4148
+C2 0 N004 1u
+Rc N004 N005 10k
+R1 N005 N003 10K
+R2 N003 0 2.2k
+
+X1 N003 N004 N006 N007 N005 LM324
+.lib C:\Users\Sefa\Desktop\Library\Digilib.txt
+.tran 50m
+.backanno
+.end
